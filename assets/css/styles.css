@@ -15,6 +15,7 @@
 }
 
 #body {
+  width: 100vw;
   overflow-x: hidden;
 }
 
@@ -366,9 +367,9 @@
   .navbar {
     opacity: 0;
     visibility: hidden;
-    display: none; /* Ocultamos el menú por completo al principio */
+    display: flex; /* Ocultamos el menú por completo al principio */
     flex-direction: column;
-    position: fixed; /* Cambiamos a fixed para mantener el menú fijo en la pantalla */
+    position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
@@ -378,10 +379,6 @@
     background-color: #015c4d;
     padding: 1.5rem;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5); /* Sigue simulando el overlay */
-    transform: translateX(
-      100%
-    ); /* Coloca el menú fuera de la pantalla por la derecha */
-    transition: transform 0.3s ease, opacity 0.3s ease;
   }
 
   /* Mostrar el menú cuando se agrega la clase "visible" */
@@ -389,7 +386,6 @@
     display: flex; /* Muestra el menú */
     opacity: 1;
     visibility: visible;
-    transform: translateX(0); /* Mueve el menú dentro de la pantalla */
   }
 
   .icono-menu {
