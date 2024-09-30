@@ -439,6 +439,7 @@
 
   .no-scroll {
     overflow: hidden;
+    position: fixed;
   }
   .logo {
     width: 225px;
