@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Sora", sans-serif;
+}
+
+:root {
+  --verdeOscuro: #004d40;
+  --amarillo: #ffca28;
+}
+
+#body {
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100vw;
+  height: 90px;
+  background-color: #004d40;
+  padding: 0px 35px;
+}
+
+.abrir-menu,
+.cerrar-menu {
+  display: none;
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+}
+
+.navbar-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 65px;
+  padding: 0px 35px 0px 0px;
+}
+
+.navbar-list a {
+  display: flex;
+  gap: 3px;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 150px;
+  background-color: #015c4d;
+  z-index: 4;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-a {
+  display: block;
+  color: var(--amarillo);
+  padding: 10px;
+  font-size: 0.7rem;
+}
+
+.dropdown-a:hover {
+  color: #00796b;
+  background-color: #055148;
+}
+
+.flecha {
+  width: 18px;
+}
+
+.list-a {
+  color: var(--amarillo);
+}
+
+.list-a:hover {
+  color: #00796b;
+}
+
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+}
+
+.hero {
+  position: relative;
+  width: 100vw;
+  height: 60vh;
+  background: url("../img/imgBack/hero-portada.jpg") no-repeat center
+    center/cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hache-uno {
+  background: linear-gradient(
+    to bottom,
+    white,
+    var(--amarillo),
+    var(--verdeOscuro)
+  );
+  color: transparent;
+  background-clip: text;
+  font-size: 3rem;
+}
+
+#nosotros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  max-width: 1300px;
+}
+
+.hache-dos {
+  display: flex;
+  background-color: var(--verdeOscuro);
+  color: var(--amarillo);
+  width: 100vw;
+  height: 50px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.nosotros-container {
+  display: flex;
+  gap: 200px;
+}
+
+.logo-container-img {
+  width: 200px;
+  height: 100px;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--verdeOscuro);
+  gap: 35px;
+  padding: 50px 0px;
+}
+
+.resaltado {
+  color: var(--amarillo);
+}
+
+.moras {
+  color: red;
+}
+
+.isd {
+  color: #07c1f2;
+}
+
+.distribuidor {
+  width: 100vw;
+}
+
+.marcas-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 25px 0px;
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.img-flora-container {
+  position: relative;
+  height: 50vh;
+  width: 100vw;
+  background: url("../img/imgBack/DSC_0520.jpg") no-repeat center center/cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-flora-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.img-flora {
+  position: relative;
+  z-index: 2;
+}
+
+#contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-contact {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(
+    to bottom,
+    var(--amarillo),
+    var(--verdeOscuro)
+  );
+}
+
+.container-contact-content {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  min-height: 375px;
+}
+
+.logo-contact {
+  width: 25px;
+  height: auto;
+}
+
+.contact-text {
+  color: white;
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  font-size: 1.2rem;
+}
+
+.a-contact:hover {
+  color: var(--amarillo);
+}
+
+.container-logos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.hache-tres {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--verdeOscuro);
+}
+
+#contactForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  gap: 25px;
+  padding: 35px 0px;
+}
+
+.form-container {
+  display: flex;
+  width: 40%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textArea {
+  width: 465px;
+  min-height: 200px;
+}
+
+.btn {
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 30px;
+  border-radius: 30px;
+  background: var(--verdeOscuro);
+  color: var(--amarillo);
+  border: 3px solid var(--amarillo);
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  background-color: #00796b;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--verdeOscuro);
+  padding: 25px 0px;
+}
+
+.p-footer {
+  color: var(--amarillo);
+}
+
+/*-----------------------MEDIA QUERIES----------------------------------------*/
+
+@media screen and (max-width: 960px) {
+  .abrir-menu,
+  .cerrar-menu {
+    width: 150px;
+    padding: 10px;
+    display: block;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .navbar {
+    opacity: 0;
+    visibility: hidden;
+    display: none; /* Ocultamos el menú por completo al principio */
+    flex-direction: column;
+    position: fixed; /* Cambiamos a fixed para mantener el menú fijo en la pantalla */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 45vw;
+    z-index: 10;
+    border-left: 2px solid var(--amarillo);
+    background-color: #015c4d;
+    padding: 1.5rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5); /* Sigue simulando el overlay */
+    transform: translateX(
+      100%
+    ); /* Coloca el menú fuera de la pantalla por la derecha */
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  /* Mostrar el menú cuando se agrega la clase "visible" */
+  .navbar.visible {
+    display: flex; /* Muestra el menú */
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0); /* Mueve el menú dentro de la pantalla */
+  }
+
+  .icono-menu {
+    width: 25px;
+  }
+
+  .navbar.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    width: 150px;
+    padding: 10px;
+    z-index: 10;
+  }
+
+  .list-a {
+    padding: 7px;
+  }
+
+  /* Ocultar el submenú por defecto */
+  .dropdown-content {
+    display: none;
+    position: static;
+    width: 100%;
+    background-color: #015c4d;
+    box-shadow: none;
+  }
+
+  /* Mostrar el dropdown cuando tenga la clase "active" */
+  .dropdown-content.active {
+    display: block;
+    position: relative; /* Hacer que el submenú se muestre debajo de Rubros */
+  }
+
+  /* Estilos adicionales para los enlaces del submenú */
+  .dropdown-a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  /* Remover hover que causa problemas */
+  .dropdown:hover .dropdown-content,
+  .dropdown-a:hover {
+    display: block; /* Mostrar el submenú cuando esté activo (no usar hover para ocultarlo) */
+  }
+
+  .no-scroll {
+    overflow: hidden;
+  }
+  .logo {
+    width: 225px;
+  }
+
+  .header {
+    height: 75px;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .logo {
+    width: 175px;
+  }
+
+  .icono-menu {
+    width: 18px;
+  }
+
+  .hache-uno {
+    font-size: 1.4rem;
+    padding: 35px;
+  }
+
+  .guion {
+    display: none;
+  }
+}
