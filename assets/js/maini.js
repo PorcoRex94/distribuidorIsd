@@ -28,6 +28,14 @@ enlacesMenu.forEach((enlace) => {
   });
 });
 
+document.addEventListener("click", (e) => {
+  // Verifica si el clic fue fuera del menú y del botón de abrir
+  if (!nav.contains(e.target) && !abrir.contains(e.target)) {
+    nav.classList.remove("visible");
+    document.body.classList.remove("no-scroll");
+  }
+});
+
 // Desplegar menú de Rubros con clic en pantallas táctiles
 rubrosLink.addEventListener("click", (e) => {
   e.preventDefault(); // Evitar el comportamiento predeterminado del enlace

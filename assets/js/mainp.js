@@ -22,9 +22,9 @@ const sections = [
         ],
         details:
           "Descubrí la impresora digital Sunthinks SC300, perfecta para packaging con un ancho de impresión de 30 cm. Ideal para imprimir directamente sobre cajas de pizza, bolsas de papel Kraft y mucho más, ofreciendo eficiencia y alta calidad.",
-        pdfLink: "./assets/pdf/Sunthinks SC1500 HP A3 5H (16-07-2024).pdf",
+        pdfLink: "./assets/pdf/Sunthinks-SC300-HP-A3-1H-16-07-2024.pdf",
         whatsappLink:
-          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20recibir%20más%20información%20sobre%20la%20Sunthinks%20SC1500",
+          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20recibir%20más%20información%20sobre%20la%20Sunthinks%20SC300",
       },
       {
         image: "./assets/img/impresoras/sunthinks-sc600.png",
@@ -43,9 +43,9 @@ const sections = [
         ],
         details:
           "Impulsá tu negocio con la impresora digital single pass Sunthinks SC600, diseñada para cartón corrugado de gran formato. Con un ancho de impresión de 60 cm, llevá tus impresiones al siguiente nivel con la máxima productividad.",
-        pdfLink: "./assets/pdf/otro-modelo.pdf",
+        pdfLink: "./assets/pdf/Sunthinks-SC600-HP-A3-2H-16-07-2024.pdf",
         whatsappLink:
-          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20recibir%20información%20del%20otro%20modelo",
+          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20recibir%20más%20información%20sobre%20la%20Sunthinks%20SC600",
       },
       {
         image: "./assets/img/impresoras/sunthinks-sc900.png",
@@ -64,9 +64,9 @@ const sections = [
         ],
         details:
           "Llevá tu negocio de embalaje a nuevas alturas con la impresora digital single pass Sunthinks SC900. Diseñada para cartón corrugado de gran formato, esta impresora maximiza la rentabilidad y simplifica tu trabajo.",
-        pdfLink: "./assets/pdf/otro-modelo.pdf",
+        pdfLink: "./assets/pdf/Sunthinks-SC900-HP-A3-3H-16-07-2024.pdf",
         whatsappLink:
-          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20recibir%20información%20del%20otro%20modelo",
+          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20recibir%20más%20información%20sobre%20la%20Sunthinks%20SC900",
       },
       {
         image: "./assets/img/impresoras/sunthinks-sc1200.png",
@@ -76,7 +76,7 @@ const sections = [
         altText: "Sunthinks SC1200",
         description:
           "La solución digital avanzada para impresiones industriales",
-        text: "Optimizá tu producción con la SC900, la solución perfecta para fábricas de embalaje que buscan eficiencia y calidad superior. ¡Hacé brillar tu negocio con la innovadora Sunthinks SC900.",
+        text: "Optimizá tu producción con la SC1200, la solución perfecta para fábricas de embalaje que buscan eficiencia y calidad superior. ¡Hacé brillar tu negocio con la innovadora Sunthinks SC1200.",
         specs: [
           "Cabezales: 4 HP® A3 Pagewide®.",
           "Velocidad: 30m/min.",
@@ -86,9 +86,9 @@ const sections = [
         ],
         details:
           "Lleva tu producción al siguiente nivel con la impresora digital de gran formato Sunthinks SC1200. Con su avanzada tecnología de cabezales y alta resolución, la SC1200 está diseñada para ofrecer resultados excepcionales en entornos industriales. Optimiza la eficiencia y calidad de tus impresiones mientras reduces costos operativos con esta potente herramienta.",
-        pdfLink: "./assets/pdf/otro-modelo.pdf",
+        pdfLink: "./assets/pdf/Sunthinks SC1200 HP A3 4H (16-07-2024).pdf",
         whatsappLink:
-          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20recibir%20información%20del%20otro%20modelo",
+          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20recibir%20más%20información%20sobre%20la%20Sunthinks%20SC1200",
       },
       {
         image: "./assets/img/impresoras/sunthinks-sc1500.png",
@@ -107,9 +107,9 @@ const sections = [
         ],
         details:
           "La Sunthinks SC1500 está diseñada para transformar la eficiencia y precisión en la producción de embalajes industriales. Con su avanzada tecnología de impresión digital single pass, esta máquina es el aliado perfecto para quienes buscan elevar la calidad y rapidez en cada proyecto.",
-        pdfLink: "./assets/pdf/otro-modelo.pdf",
+        pdfLink: "./assets/pdf/Sunthinks SC1500 HP A3 5H (16-07-2024).pdf",
         whatsappLink:
-          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20recibir%20información%20del%20otro%20modelo",
+          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20recibir%20más%20información%20sobre%20la%20Sunthinks%20SC1500",
       },
       {
         image: "./assets/img/impresoras/sunthinks-sc1800.png",
@@ -128,9 +128,9 @@ const sections = [
         ],
         details:
           "La Sunthinks SC1800 es tu puerta de entrada a una nueva era en la impresión digital para embalajes. Esta máquina está diseñada para operaciones que requieren alta velocidad, precisión y versatilidad, convirtiéndose en la solución perfecta para proyectos de gran escala.",
-        pdfLink: "./assets/pdf/otro-modelo.pdf",
+        pdfLink: "./assets/pdf/Sunthinks SC1800 HP A3 6H (16-07-2024).pdf",
         whatsappLink:
-          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20recibir%20información%20del%20otro%20modelo",
+          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20recibir%20más%20información%20sobre%20la%20Sunthinks%20SC1800",
       },
     ],
   },
@@ -138,28 +138,6 @@ const sections = [
     sectionId: "flora",
     title: "FLORA",
     printers: [
-      {
-        image: "./assets/img/impresoras/flora-j330s.png",
-        imageBrand: "./assets/img/logos/logo-flora-original.png",
-        imagePdf: "./assets/img/logos/logo-pdf.png",
-        imageWhats: "./assets/img/logos/logo-whatsapp.png",
-        altText: "Flora J-330S",
-        description:
-          "¡Máxima resolución, precisión y velocidad en una sola pasada!",
-        text: "¡Llevá tu negocio al siguiente nivel con Flora!",
-        specs: [
-          "Imprime en rollo de hasta 340mm",
-          "Tintas: UV (CMYK + blanco)",
-          "Producciones de hasta 60 metros lineales por minuto.",
-          "Es un equipo muy fácil de operar y su diseño compacto permite ahorrar mucho espacio físico",
-          "Admite distintos tipos de papel, PVC, PET, películas, entre otros sustratos.",
-        ],
-        details:
-          "La nueva impresora inkjet J-330S de Flora es la solución industrial más productiva de empaques flexibles y etiquetas digitales.",
-        pdfLink: "./assets/pdf/domestico-modelo1.pdf",
-        whatsappLink:
-          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20más%20información%20sobre%20la%20impresora%20doméstica%20modelo%201",
-      },
       {
         image: "./assets/img/impresoras/flora-c25hpro.png",
         imageBrand: "./assets/img/logos/logo-flora-original.png",
@@ -178,9 +156,9 @@ const sections = [
         ],
         details:
           "La famosa empresa líder en Asia-Pacífico, Flora, no sólo ha rediseñado la impresora C25h sino que, además, ha decidido incorporar la tecnología más avanzada de impresión como lo son los cabezales industriales más productivos del mercado, Epson S3200, logrando así mejor calidad y definición de impresión y alcanzando velocidades de hasta 1200 m2/h en una sola pasada.",
-        pdfLink: "./assets/pdf/domestico-modelo2.pdf",
+        pdfLink: "./assets/pdf/Flora-C25h-Pro.pdf",
         whatsappLink:
-          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20más%20información%20sobre%20la%20impresora%20doméstica%20modelo%202",
+          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20más%20información%20sobre%20la%20Flora%20C25h Pro",
       },
     ],
   },
@@ -205,9 +183,9 @@ const sections = [
         ],
         details:
           "El nuevo sistema de corte de carga automática, SG-ASF420 de Saga, está diseñado para la producción en masa de etiquetas, embalajes, papelería y aplicaciones varias de packaging.",
-        pdfLink: "./assets/pdf/domestico-modelo1.pdf",
+        pdfLink: "./assets/pdf/Saga-SG-ASF420.pdf",
         whatsappLink:
-          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20más%20información%20sobre%20la%20impresora%20doméstica%20modelo%201",
+          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20más%20información%20sobre%20la%20Saga%20SG-ASF420",
       },
     ],
   },
@@ -233,9 +211,9 @@ const sections = [
         ],
         details:
           "La Serie TK4S de iECHO presenta las mesas de corte automáticas de gran formato que te permiten trabajar con gran precisión el corte completo, medio corte, grabado, plegado, ranurado y marcado.",
-        pdfLink: "./assets/pdf/domestico-modelo1.pdf",
+        pdfLink: "./assets/pdf/Serie-TK4S-iecho.pdf",
         whatsappLink:
-          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20más%20información%20sobre%20la%20impresora%20doméstica%20modelo%201",
+          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20más%20información%20sobre%20la%20iecho%20TK4S",
       },
       {
         image: "./assets/img/impresoras/iecho-bk3.png",
@@ -255,9 +233,9 @@ const sections = [
         ],
         details:
           "Con la BK3 podés realizar trabajos de corte completo, medio corte, fresado, plegado y marcado a una velocidad sorprendente, con un corte increíblemente preciso y de forma súper sencilla.",
-        pdfLink: "./assets/pdf/domestico-modelo2.pdf",
+        pdfLink: "./assets/pdf/Serie-Bk3-iecho.pdf",
         whatsappLink:
-          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20más%20información%20sobre%20la%20impresora%20doméstica%20modelo%202",
+          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20más%20información%20sobre%20la%20iecho%20BK3",
       },
       {
         image: "./assets/img/impresoras/iecho-pk-1209.png",
@@ -277,9 +255,9 @@ const sections = [
         ],
         details:
           "La mesa de corte PK-1209 PRO es la opción ideal para la producción personalizada de tiradas cortas y la elaboración de muestras para la industria gráfica y de packaging.",
-        pdfLink: "./assets/pdf/domestico-modelo2.pdf",
+        pdfLink: "./assets/pdf/Iecho-PK-1209.pdf",
         whatsappLink:
-          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20más%20información%20sobre%20la%20impresora%20doméstica%20modelo%202",
+          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20más%20información%20sobre%20la%20iecho%20PK1209",
       },
       {
         image: "./assets/img/impresoras/iecho-pk-series.png",
@@ -299,9 +277,9 @@ const sections = [
         ],
         details:
           "La Serie PK es perfecta para la producción personalizada de tiradas cortas y la elaboración de muestras para la industria gráfica y de packaging.",
-        pdfLink: "./assets/pdf/domestico-modelo2.pdf",
+        pdfLink: "./assets/pdf/PK0604-PK0705.pdf",
         whatsappLink:
-          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20más%20información%20sobre%20la%20impresora%20doméstica%20modelo%202",
+          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20más%20información%20sobre%20la%20iecho%20PK0604%20y%PK0705",
       },
     ],
   },
@@ -327,9 +305,9 @@ const sections = [
         ],
         details:
           "Presentamos los motores de impresión de Industrial Inkjet. Se trata de motores de impresión singlepass (una sola pasada) con tintas UV. Son la solución perfecta para agregar a tu prensa flexográfica y duplicar o triplicar tu producción. Apto para sistema Retrofit.",
-        pdfLink: "./assets/pdf/domestico-modelo1.pdf",
+        pdfLink: "./assets/pdf/Retrofit-Monoprint-y-Colorprint.pdf",
         whatsappLink:
-          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20más%20información%20sobre%20la%20impresora%20doméstica%20modelo%201",
+          "https://web.whatsapp.com/send?phone=541166722505&text=Hola,%20quisiera%20más%20información%20sobre%20la%20Industrial Inkjet%20Monoprint | Colorprint",
       },
     ],
   },
