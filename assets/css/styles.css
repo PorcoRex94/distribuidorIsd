@@ -496,4 +496,17 @@
     flex-direction: column;
     text-align: center;
   }
+
+  .container-contact {
+    flex-direction: column;
+  }
+
+  .contact-text {
+    text-align: center;
+  }
+
+  .form-container {
+    justify-content: center;
+    gap: 15px;
+  }
 }
