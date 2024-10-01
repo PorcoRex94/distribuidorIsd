@@ -245,6 +245,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100vw;
 }
 
 .container-contact {
@@ -306,6 +307,7 @@
   width: 60%;
   gap: 25px;
   padding: 35px 0px;
+  border: 1px solid purple;
 }
 
 .form-container {
@@ -313,6 +315,7 @@
   width: 40%;
   justify-content: space-between;
   align-items: center;
+  border: 1px solid red;
 }
 
 .textArea {
@@ -505,8 +508,13 @@
     text-align: center;
   }
 
-  .form-container {
+  .form {
+    display: flex;
     justify-content: center;
+  }
+
+  .form-container {
+    flex-direction: column;
     gap: 15px;
   }
 
@@ -515,11 +523,12 @@
   }
 
   .form-container {
-    width: 85%;
+    width: 100%;
+    border: 1px solid purple;
   }
 
   .textArea {
-    width: 250px;
+    width: 200px;
     min-height: 150px;
   }
 }
