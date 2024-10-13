@@ -13,7 +13,21 @@
         alt="Logo ISD S.A Moras y Compañía"
         class="logo"
       />
-      <nav class="navbar">
+      <button id="abrir" class="abrir-menu">
+        <img
+          src="./assets/img/logos/icono-menu.png"
+          alt="menú"
+          class="icono-menu"
+        />
+      </button>
+      <nav class="navbar" id="menu">
+        <button class="cerrar-menu" id="cerrar">
+          <img
+            class="icono-menu"
+            src="./assets/img/logos/icono-cerrar.png"
+            alt="icono cerrar"
+          />
+        </button>
         <ul class="navbar-list">
           <li><a href="./index.html" class="list-a">Home</a></li>
           <li id="inicio" style="display: none">
@@ -21,7 +35,7 @@
           </li>
           <li><a href="./index.html#nosotros" class="list-a">Nosotros</a></li>
           <li class="dropdown">
-            <a href="" class="list-a"
+            <a href="#" class="list-a" id="toggleRubros"
               >Rubros
               <img
                 src="./assets/img/logos/flecha2.png"
@@ -44,7 +58,9 @@
     </header>
     <main id="main">
       <section id="hero">
-        <h1 class="hero-content">Industria Del Packaging</h1>
+        <div class="hero-content">
+          <h1 class="hache-uno">Industria Del Packaging</h1>
+        </div>
       </section>
       <section id="marcas">
         <nav class="navbarm">
