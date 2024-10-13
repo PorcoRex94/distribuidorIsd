@@ -534,6 +534,7 @@
 @media screen and (max-width: 800px) {
   .ulm {
     flex-wrap: wrap;
+    gap: 50px;
   }
 }
 
@@ -545,5 +546,64 @@
   .hache-uno {
     font-size: 1.6rem;
     padding: 35px;
+  }
+
+  .hache-dos {
+    font-size: 1rem;
+  }
+
+  .hache-seis {
+    font-size: 0.7rem;
+  }
+
+  .hache-tres {
+    font-size: 1rem;
+  }
+
+  .hache-cuatro {
+    font-size: 1rem;
+  }
+
+  .p-text {
+    font-size: 0.7rem;
+  }
+
+  .li-sun {
+    font-size: 0.8rem;
+  }
+
+  .logo-brand {
+    width: 95px;
+    height: auto;
+  }
+
+  .logo-pdf,
+  .logo-whats {
+    width: 12px;
+    height: auto;
+  }
+
+  .impresora-img {
+    width: 200px;
+    height: auto;
+  }
+
+  .container-btn {
+    display: flex;
+    gap: 5px;
+  }
+
+  .btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 15px;
+    border-radius: 25px;
+    background: var(--verdeOscuro);
+    color: var(--amarillo);
+    border: 3px solid var(--amarillo);
+    cursor: pointer;
+    transition: transform 0.5s ease;
   }
 }
