@@ -1068,6 +1068,14 @@ window.onscroll = function () {
   }
 };
 
+// Función para determinar el enlace correcto de WhatsApp
+const getWhatsAppLink = (whatsappLink) => {
+  const isMobile = window.innerWidth <= 768;
+  return isMobile
+    ? whatsappLink.replace("web.whatsapp.com", "api.whatsapp.com")
+    : whatsappLink;
+};
+
 let globalPrinterCounter = 0;
 
 // Función auxiliar para generar listas HTML
@@ -1102,9 +1110,9 @@ const createPrinterItem = (printer, index) => {
     printer.altText
   }" class="impresora-img"/>
               <div class="container-btn">
-              <a href="${
+              <a href="${getWhatsAppLink(
                 printer.whatsappLink
-              }" target="_blank" class="btn" style="${whatsappOrder}"><img src="${
+              )}" target="_blank" class="btn" style="${whatsappOrder}"><img src="${
     printer.imageWhats
   }" alt="logo whatsapp" class="logo-whats"/>Atención por Whatsapp</a>
               <a href="${
