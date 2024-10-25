@@ -425,6 +425,23 @@ const createSection = (section) => {
   return sectionElement;
 };
 
+// Función para ajustar los enlaces de WhatsApp según el tamaño de pantalla
+function adjustWhatsAppLinks() {
+  const isMobile = window.innerWidth <= 768;
+
+  sections.forEach((section) => {
+    section.printers.forEach((printer) => {
+      printer.whatsappLink = isMobile
+        ? printer.whatsappLink.replace("web.whatsapp.com", "wa.me")
+        : printer.whatsappLink.replace("wa.me", "web.whatsapp.com");
+    });
+  });
+}
+
+// Llamar a la función en carga y en cambio de tamaño de ventana
+window.addEventListener("load", adjustWhatsAppLinks);
+window.addEventListener("resize", adjustWhatsAppLinks);
+
 const nav = document.querySelector(".navbar");
 const abrir = document.querySelector("#abrir");
 const cerrar = document.querySelector("#cerrar");
