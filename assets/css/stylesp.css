@@ -529,16 +529,7 @@
   .img-flora-container {
     background-attachment: local;
   }
-}
 
-@media screen and (max-width: 800px) {
-  .ulm {
-    flex-wrap: wrap;
-    gap: 50px;
-  }
-}
-
-@media screen and (max-width: 480px) {
   .logo {
     width: 175px;
   }
@@ -590,20 +581,14 @@
 
   .container-btn {
     display: flex;
-    gap: 5px;
+    flex-wrap: wrap;
+    gap: 15px;
   }
+}
 
-  .btn {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    padding: 5px 15px;
-    border-radius: 25px;
-    background: var(--verdeOscuro);
-    color: var(--amarillo);
-    border: 3px solid var(--amarillo);
-    cursor: pointer;
-    transition: transform 0.5s ease;
+@media screen and (max-width: 800px) {
+  .ulm {
+    flex-wrap: wrap;
+    gap: 50px;
   }
 }

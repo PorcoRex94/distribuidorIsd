@@ -15,7 +15,6 @@
 }
 
 #body {
-  margin-top: 80px;
   overflow-x: hidden;
   width: 100vw;
 }
@@ -49,6 +48,11 @@
 .logo {
   width: 250px;
   height: auto;
+}
+
+.abrir-menu,
+.cerrar-menu {
+  display: none;
 }
 
 .navbar-list {
@@ -123,7 +127,7 @@
   align-items: center;
   text-align: center;
   width: 100vw;
-  height: 60vh;
+  height: 73vh;
   background: url(../img/imgBack/packaging.jpg) no-repeat center center/cover;
   background-attachment: fixed;
 }
@@ -141,6 +145,10 @@
 
 .hero-content {
   position: relative;
+  z-index: 2;
+}
+
+.hache-uno {
   background: linear-gradient(
     to bottom,
     white,
@@ -149,7 +157,6 @@
   );
   color: transparent;
   background-clip: text;
-  z-index: 2;
   font-size: 3rem;
 }
 
@@ -347,4 +354,170 @@
 
 .p-footer {
   color: var(--amarillo);
+}
+
+/*-------------MEDIA QUERIES---------------*/
+
+@media screen and (max-width: 960px) {
+  .abrir-menu,
+  .cerrar-menu {
+    width: 150px;
+    padding: 10px;
+    display: block;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .navbar {
+    opacity: 0;
+    visibility: hidden;
+    display: flex; /* Ocultamos el menú por completo al principio */
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 45vw;
+    z-index: 12;
+    border-left: 2px solid var(--amarillo);
+    background-color: #015c4d;
+    padding: 1.5rem;
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5); /* Sigue simulando el overlay */
+  }
+
+  /* Mostrar el menú cuando se agrega la clase "visible" */
+  .navbar.visible {
+    display: flex; /* Muestra el menú */
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .icono-menu {
+    width: 25px;
+  }
+
+  .navbar.visible {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    width: 150px;
+    padding: 10px;
+    z-index: 12;
+  }
+
+  .list-a {
+    padding: 7px;
+  }
+
+  /* Ocultar el submenú por defecto */
+  .dropdown-content {
+    display: none;
+    position: static;
+    width: 100%;
+    background-color: #015c4d;
+    box-shadow: none;
+  }
+
+  /* Mostrar el dropdown cuando tenga la clase "active" */
+  .dropdown-content.active {
+    display: block;
+    position: relative; /* Hacer que el submenú se muestre debajo de Rubros */
+  }
+
+  /* Estilos adicionales para los enlaces del submenú */
+  .dropdown-a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 0.8rem;
+  }
+
+  /* Remover hover que causa problemas */
+  .dropdown:hover .dropdown-content,
+  .dropdown-a:hover {
+    display: block; /* Mostrar el submenú cuando esté activo (no usar hover para ocultarlo) */
+  }
+
+  .no-scroll {
+    overflow: hidden;
+    position: fixed;
+  }
+  .logo {
+    width: 240px;
+  }
+
+  .header {
+    padding: 0;
+  }
+
+  .hero,
+  .img-flora-container {
+    background-attachment: local;
+  }
+
+  .logo {
+    width: 175px;
+  }
+
+  .hache-uno {
+    font-size: 1.6rem;
+    padding: 35px;
+  }
+
+  .hache-dos {
+    font-size: 1rem;
+  }
+
+  .hache-seis {
+    font-size: 0.7rem;
+  }
+
+  .hache-tres {
+    font-size: 1rem;
+  }
+
+  .hache-cuatro {
+    font-size: 1rem;
+  }
+
+  .p-text {
+    font-size: 0.7rem;
+  }
+
+  .li-sun {
+    font-size: 0.8rem;
+  }
+
+  .logo-brand {
+    width: 95px;
+    height: auto;
+  }
+
+  .logo-pdf,
+  .logo-whats {
+    width: 12px;
+    height: auto;
+  }
+
+  .impresora-img {
+    width: 200px;
+    height: auto;
+  }
+
+  .container-btn {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .ulm {
+    flex-wrap: wrap;
+    gap: 50px;
+  }
 }
