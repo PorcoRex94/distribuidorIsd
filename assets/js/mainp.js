@@ -345,6 +345,14 @@ window.onscroll = function () {
   }
 };
 
+// Función para determinar el enlace correcto de WhatsApp
+const getWhatsAppLink = (whatsappLink) => {
+  const isMobile = window.innerWidth <= 768;
+  return isMobile
+    ? whatsappLink.replace("web.whatsapp.com", "api.whatsapp.com")
+    : whatsappLink;
+};
+
 let globalPrinterCounter = 0;
 
 // Función auxiliar para generar listas HTML
@@ -379,9 +387,9 @@ const createPrinterItem = (printer, index) => {
     printer.altText
   }" class="impresora-img"/>
               <div class="container-btn">
-              <a href="${
+              <a href="${getWhatsAppLink(
                 printer.whatsappLink
-              }" target="_blank" class="btn" style="${whatsappOrder}"><img src="${
+              )}" target="_blank" class="btn" style="${whatsappOrder}"><img src="${
     printer.imageWhats
   }" alt="logo whatsapp" class="logo-whats"/>Atención por Whatsapp</a>
               <a href="${
@@ -424,23 +432,6 @@ const createSection = (section) => {
 
   return sectionElement;
 };
-
-// Función para ajustar los enlaces de WhatsApp según el tamaño de pantalla
-function adjustWhatsAppLinks() {
-  const isMobile = window.innerWidth <= 768;
-
-  sections.forEach((section) => {
-    section.printers.forEach((printer) => {
-      printer.whatsappLink = isMobile
-        ? printer.whatsappLink.replace("web.whatsapp.com", "wa.me")
-        : printer.whatsappLink.replace("wa.me", "web.whatsapp.com");
-    });
-  });
-}
-
-// Llamar a la función en carga y en cambio de tamaño de ventana
-window.addEventListener("load", adjustWhatsAppLinks);
-window.addEventListener("resize", adjustWhatsAppLinks);
 
 const nav = document.querySelector(".navbar");
 const abrir = document.querySelector("#abrir");
